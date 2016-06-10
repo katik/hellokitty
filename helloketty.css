@@ -1,12 +1,16 @@
-.head {
-    width: 242px;
-    height: 182px;
-    border-radius: 162px;
-    border: 10px solid black;
+#kitty {
     position: absolute;
     left: 300px;
     top: 50px;
     text-align: center;
+}
+
+.head {
+    position: absolute;
+    width: 242px;
+    height: 182px;
+    border-radius: 162px;
+    border: 10px solid black;
 }
 
 .eye {
@@ -227,5 +231,123 @@
     left: 42px;
 }
 
+.body {
+    position: absolute;
+    top: 202px;
+    height: 140px;
+    width: 242px;
+    left: 10px;
+}
 
+.left-arm {
+    width: 41px;
+    height: 76px;
+    position: absolute;
+    border: 8px solid black;
+    transform: rotate(25deg);
+    border-radius: 96px 32px 53px 74px;
+    top: -16px;
+    left: 8px;
+    background: rgb(255, 192, 203);
+}
+
+.left-arm span {
+    width: 100%;
+    height: 34px;
+    display: block;
+    border: 8;
+    border: 8px solid black;
+    top: 32px;
+    left: -8px;
+    position: absolute;
+    border-radius: 0 0 53px 74px;
+    background: white;
+}
+
+.right-arm {
+    width: 41px;
+    height: 76px;
+    position: absolute;
+    border: 8px solid black;
+    right: 8px;
+    transform: rotate(-25deg);
+    border-radius: 32px 96px 74px 53px;
+    top: -16px;
+    background: rgb(255, 192, 203);
+}
+
+.right-arm span {
+    width: 100%;
+    height: 34px;
+    display: block;
+    border: 8;
+    border: 8px solid black;
+    top: 32px;
+    left: -8px;
+    position: absolute;
+    border-radius: 0 0 74px 53px;
+    background: white;
+}
+
+.shirt {
+    width: 156px;
+    height: 92px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -7px;
+    margin: auto;
+    border: 8px solid black;
+    border-radius: 51px 51px 25px 25px/101px 101px 20px 20px;
+    background: rgb(245, 31, 39);
+    z-index: 2;
+}
+
+.neck {
+    width: 56px;
+    height: 19px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: -10px;
+    margin: auto;
+    background: rgb(255, 192, 203);
+    border: 8px solid black;
+    border-radius: 0 0 56px 56px;
+    z-index: 3;
+}
+
+.left-leg {
+    width: 75px;
+    height: 42px;
+    border: 8px solid black;
+    position: absolute;
+    top: 83px;
+    left: 35px;
+    border-radius: 0 0 28px 34px;
+    z-index: 0;
+}
+
+.right-leg {
+    width: 75px;
+    height: 42px;
+    border: 8px solid black;
+    border-left: 7px solid black;
+    position: absolute;
+    top: 83px;
+    right: 35px;
+    border-radius: 0 0 34px 28px;
+    z-index: 0;
+}
+
+.shirt-bottom {
+    width: 0px;
+    border: 5px solid black;
+    height: 10px;
+    position: absolute;
+    background-color: black;
+    top: 83px;
+    left: 117px;
+    z-index: 3;
+    border-radius: 4px;
 }
