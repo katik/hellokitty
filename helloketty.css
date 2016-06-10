@@ -244,11 +244,13 @@
     height: 76px;
     position: absolute;
     border: 8px solid black;
-    transform: rotate(25deg);
+    /*transform: rotate(23deg);*/
+    transform-origin: 41px 0;
     border-radius: 96px 32px 53px 74px;
-    top: -16px;
-    left: 8px;
+    top: -9px;
+    left: 20px;
     background: rgb(255, 192, 203);
+    animation: roll 2s infinite ease;
 }
 
 .left-arm span {
@@ -269,11 +271,14 @@
     height: 76px;
     position: absolute;
     border: 8px solid black;
-    right: 8px;
-    transform: rotate(-25deg);
+    right: 19px;
+    transform-origin: 0 0;
+    transform: rotate(0deg);
     border-radius: 32px 96px 74px 53px;
-    top: -16px;
+    top: -5px;
     background: rgb(255, 192, 203);
+        animation: roll1 2s infinite ease;
+
 }
 
 .right-arm span {
@@ -350,4 +355,29 @@
     left: 117px;
     z-index: 3;
     border-radius: 4px;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(37deg);
+    }
+    100% {
+        transfrom: rotate(25deg);
+    }
+}
+
+
+@keyframes roll1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-37deg);
+    }
+    100% {
+        transfrom: rotate(-25deg);
+    }
 }
