@@ -11,6 +11,15 @@
     height: 182px;
     border-radius: 162px;
     border: 10px solid black;
+   
+}
+
+.drop-head{
+     /*transform: translate(380px,135px) rotate(180deg);*/
+    animation: drop 1s 1 cubic-bezier(0.88, 0.04, 1, 0.1)
+}
+.drop-head-end{
+         transform: translate(380px,135px) rotate(180deg);
 }
 
 .eye {
@@ -218,6 +227,7 @@
     background-color: rgb(245, 31, 39);
     top: 25px;
     left: 29px;
+    /*cursor: pointer;*/
 }
 
 .dot {
@@ -229,6 +239,7 @@
     background-color: rgb(245, 31, 39);
     top: 14px;
     left: 42px;
+    cursor: pointer;
 }
 
 .body {
@@ -379,5 +390,23 @@
     }
     100% {
         transfrom: rotate(-25deg);
+    }
+}
+
+@keyframes drop{
+   /* 0% {
+        transform: translate(20px,20px) rotate(10deg);
+
+    }
+    20% {
+        transform: translate(80px,60px) rotate(17deg);
+    }*/
+
+    20% {
+        transform: translate(30px,30px) rotate(27deg);
+    }
+
+    100% {
+        transform: translate(380px,135px) rotate(180deg);
     }
 }
